@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 400px;
+    margin: auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    color: aliceblue;
+}
