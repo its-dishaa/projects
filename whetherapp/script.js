@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded",()=>{
        const city= cityInput.value.trim()
        if(!city) return;
 
-    
 
     try{
         const weatherData=await fetchWeatherData(city);
@@ -42,6 +41,8 @@ document.addEventListener("DOMContentLoaded",()=>{
         console.log(data);
         const{name,main,weather}=data;
         cityNameDisplay.textContent=name;
+        temperatureDisplay.textContent=`Temperature:${main.temp}`;
+        descriptionDisplay.textContent=`Weather:${weather[0].description}`
 
         //unlock the display
         weatherInfo.classList.remove("hidden");
