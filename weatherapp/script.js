@@ -56,6 +56,4 @@ document.addEventListener("DOMContentLoaded",()=>{
         errorMessage.classList.remove('hidden')
     }
      
-
-
 })
