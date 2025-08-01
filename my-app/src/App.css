@@ -5,6 +5,38 @@
   text-align: center;
 }
 
+input,
+select,
+button {
+  background-color: white;       /* white background for visibility */
+  color: black;                  /* black text */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+input:disabled {
+  background-color: #e0e0e0;     /* light gray for disabled input */
+  color: black;
+}
+
+label {
+  color: white;            /* Make the label text white */
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+}
+
+.currency-label {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
