@@ -1,16 +1,19 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import Navbar from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
+    <div className="app-wrapper">
+      <Navbar />
+      <main className="page-content">
         <h1>Welcome</h1>
-      </div>
-    </>
-  )
+        <p>This is the main content of the page.</p>
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
