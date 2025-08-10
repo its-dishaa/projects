@@ -13,7 +13,9 @@ function LandingPage() {
 
         <div className="textstructure ">
           <div className="masker fw-bold mb-2"></div>
-          <h1 className="display-3 fw-bold lh-1 mb-0">EYE OPENING</h1>
+          <h1 className="display-3 fw-bold lh-1 ">
+             <span className="red-gap"> </span> EYE OPENING
+          </h1>
         </div>
 
         <div className="textstructure">

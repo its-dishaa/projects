@@ -22,6 +22,14 @@
 }
 
 
+.red-gap {
+  display: inline-block;
+  width: 0.7em;
+  height: 0.8em;  /* slightly taller */
+  background-color: red;
+  vertical-align: baseline; /* or middle depending on alignment */
+}
+
 
 
 #root {
