@@ -21,6 +21,15 @@
   gap: 19rem; /* or any value you prefer */
 }
 
+.bg-emphasis {
+  background-color: #2E8B57; /* Pick any color you like */
+}
+
+.border {
+  border: 1px solid #dee2e6 !important;
+}
+
+
 
 .red-gap {
   display: inline-block;
