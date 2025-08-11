@@ -1,6 +1,6 @@
 import React from 'react';
 
-function marquee() {
+function Marquee() {
   return (
     <div
       className="w-100 d-flex flex-column justify-content-center align-items-center bg-success"
@@ -12,4 +12,4 @@ function marquee() {
   );
 }
 
-export default marquee;
+export default Marquee; // Uppercase M
