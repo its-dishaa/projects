@@ -4,11 +4,17 @@ import { motion } from "framer-motion";
 
 function Marquee() {
   return (
-    <div
-      className="w-100 d-flex flex-column justify-content-center align-items-center bg-emphasis"
-      style={{ height: '50vh', transform: 'translateY(-130px)'}}
-    >
- <div className="border border-white p-3 rounded d-flex gap-3 w-100" 
+    // Marquee.js
+<div
+  className="w-100 d-flex flex-column justify-content-center align-items-center bg-emphasis mb-0"
+  style={{ height: '50vh', transform: 'translateY(-130px)', marginBottom: 0 }}
+>
+
+ <div className="border border-white p-3 rounded d-flex gap-3 " 
+  style={{
+    width: "120%", // increase beyond parent
+    borderWidth: "5px" // optional: thicker border
+  }}
  >
     
         <motion.div
