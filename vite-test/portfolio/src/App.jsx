@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar'
 import Background from './Components/Background'
 import HeroText from './Components/HeroText'
 import About from './Components/About';
+import Projects from "./Components/Projects";
 
 
 
@@ -16,6 +17,7 @@ function App() {
     <Background/>
     <HeroText/>
     <About/>
+    <Projects/>
     
   
     </>

@@ -17,6 +17,7 @@
   animation: moveStars 60s linear infinite;
 }
 
+
 @keyframes moveStars {
   0% {
     background-position: 0 0;
