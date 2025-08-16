@@ -75,7 +75,7 @@ export default function About() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
         {/* Card 1 - Web Development */}
-        <AnimatedBackgroundCard image={webImg} className="h-64 hover:scale-105 transition-transform">
+        <AnimatedBackgroundCard image={webImg} className="h-65 hover:scale-105 transition-transform">
           <h3 className="text-2xl font-semibold mb-2 text-white">Web Development</h3>
           <p className="text-gray-200">
             As a full-stack web developer specializing in the MERN stack, I architect and build responsive, component-driven interfaces with React, style mobile-first layouts using Tailwind CSS and Bootstrap, and power backend services with Node.js and Express.
@@ -83,7 +83,7 @@ export default function About() {
         </AnimatedBackgroundCard>
 
         {/* Card 2 - Tech Stack */}
-        <AnimatedBackgroundCard image={logo} className="p-6 hover:scale-105 transition-transform">
+        <AnimatedBackgroundCard image={logo} className="h-65 p-6 hover:scale-105 transition-transform">
   {/* Darker overlay specifically for this card */}
   <div className="absolute inset-0  bg-opacity-110 z-0"></div>
   <h3 className="text-2xl font-semibold mb-4 relative z-10">Tech Stack</h3>
@@ -97,13 +97,13 @@ export default function About() {
 </AnimatedBackgroundCard>
 
         {/* Card 3 - Problem Solving */}
-        <AnimatedBackgroundCard image={card3} className="p-6 hover:scale-105 transition-transform">
-          <h3 className="text-2xl font-semibold mb-4">Problem Solving</h3>
+        <AnimatedBackgroundCard image={card3} className="h-65 p-6 hover:scale-105 transition-transform">
+          <h3 className="text-2xl font-semibold mb-4"></h3>
           <div className="h-20 flex items-center justify-center">
             <AnimatePresence>
               <motion.p
                 key={index}
-                className="text-white text-2xl"
+                className="text-white text-3xl"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}

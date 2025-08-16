@@ -51,6 +51,9 @@ const Projects = () => {
           onMouseEnter={() => setHovered(i)}
           onMouseLeave={() => setHovered(null)}
           style={{ width: "300px", cursor: "pointer" }}
+          whileHover={{ scale: 1.08, boxShadow: "0px 8px 20px rgba(0,0,0,0.4)" }}
+  whileTap={{ scale: 0.95 }}
+  transition={{ type: "spring", stiffness: 300, damping: 20 }}
         >
           <img
   src={hovered === i ? p.color : p.bw}
