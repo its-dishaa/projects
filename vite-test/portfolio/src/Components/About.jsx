@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import webImg from "../assets/web.jpg";
 import logo from "../assets/logo.jpg";
-import card3 from "../assets/card3.jpg";
+import card3 from "../assets/starry2.jpg";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Reusable animated background card
@@ -45,20 +45,9 @@ function AnimatedBackgroundCard({ image, children, className }) {
 
 export default function About() {
   const lines = [
-    "Breaking down complex problems",
-    "Optimizing algorithms",
-    "Debugging efficiently",
-    "Thinking outside the box",
+    "Software Development Intern (Jun 2025 – Aug 2025): Etelligens Technologies",
+    "AICTE Virtual Internship (Jul 2024 – Aug 2024)",
   ];
-
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % lines.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <section id="about" className="py-16 px-6 text-white">
@@ -75,7 +64,7 @@ export default function About() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
         {/* Card 1 - Web Development */}
-        <AnimatedBackgroundCard image={webImg} className="h-65 hover:scale-105 transition-transform">
+        <AnimatedBackgroundCard image={card3} className="h-65 hover:scale-105 transition-transform">
           <h3 className="text-2xl font-semibold mb-2 text-white">Web Development</h3>
           <p className="text-gray-200">
             As a full-stack web developer specializing in the MERN stack, I architect and build responsive, component-driven interfaces with React, style mobile-first layouts using Tailwind CSS and Bootstrap, and power backend services with Node.js and Express.
@@ -83,7 +72,7 @@ export default function About() {
         </AnimatedBackgroundCard>
 
         {/* Card 2 - Tech Stack */}
-        <AnimatedBackgroundCard image={logo} className="h-65 p-6 hover:scale-105 transition-transform">
+        <AnimatedBackgroundCard image={card3} className="h-65 p-6 hover:scale-105 transition-transform">
   {/* Darker overlay specifically for this card */}
   <div className="absolute inset-0  bg-opacity-110 z-0"></div>
   <h3 className="text-2xl font-semibold mb-4 relative z-10">Tech Stack</h3>
@@ -96,24 +85,20 @@ export default function About() {
   </div>
 </AnimatedBackgroundCard>
 
-        {/* Card 3 - Problem Solving */}
-        <AnimatedBackgroundCard image={card3} className="h-65 p-6 hover:scale-105 transition-transform">
-          <h3 className="text-2xl font-semibold mb-4"></h3>
-          <div className="h-20 flex items-center justify-center">
-            <AnimatePresence>
-              <motion.p
-                key={index}
-                className="text-white text-3xl"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.8 }}
-              >
-                {lines[index]}
-              </motion.p>
-            </AnimatePresence>
-          </div>
-        </AnimatedBackgroundCard>
+        
+{/* Card 3 - Professional Experience */}
+<AnimatedBackgroundCard image={card3} className="h-66 p-6">
+  <h3 className="absolute top-2 left-1/2 -translate-x-1/2 text-2xl font-semibold text-center">
+    Professional Experience
+  </h3>
+  <div className="flex flex-col items-center justify-center mt-12 space-y-3">
+    {lines.map((line, i) => (
+      <p key={i} className="text-white text-lg">
+        {line}
+      </p>
+    ))}
+  </div>
+</AnimatedBackgroundCard>
 
       </div>
     </section>
